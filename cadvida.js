@@ -54,8 +54,10 @@ try{
 } catch (error){}
 });
 
-app.get("/" , async(req, res)=>{
-    res.sendFile(__dirname + "/index.html")
+//rota de get de formulario
+
+app.get("/cadastrousuario" , async(req, res)=>{
+    res.sendFile(__dirname + "/cadastrousuario.html")
 });
 
 app.listen(port, ()=>{
